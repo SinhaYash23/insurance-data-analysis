@@ -1,134 +1,129 @@
-Insurance Data Analysis – Power BI Dashboard
+Insurance Data Analysis – Power BI Project
 📌 Project Overview
 
-This project focuses on analyzing insurance customer data using Power BI.
-The goal is to identify patterns in customer demographics, policy performance, claim behavior, and risk factors to support data-driven decision-making for insurance teams.
+This project focuses on analyzing insurance customer data using Power BI to identify trends in customer demographics, policy performance, claim behavior, and risk indicators.
+The dashboard provides actionable insights for decision-making and operational improvement.
 
-The project includes:
+📊 Key Insights Covered
 
-Data cleaning & transformation
+Customer demographics (age, gender, region, income)
 
-Data modeling
+Policy status & performance analysis
 
-DAX calculations
+Claims summary & claim amount trends
 
-Interactive dashboards
+High-risk vs low-risk segmentation
 
-Row Level Security (RLS)
+Premium and revenue performance
 
-Scheduled refresh setup in Power BI Service
+Loss ratio & profitability metrics
 
-📊 Dashboard Features
-1. Customer Demographics Analysis
-
-Age groups, gender distribution, income segmentation
-
-Region-wise customer distribution
-
-2. Policy Performance
-
-Active vs. inactive policy trends
-
-Policy type breakdown
-
-Renewal patterns
-
-3. Claims Analysis
-
-Number of claims, claim amount trends
-
-High-risk vs. low-risk customer segments
-
-Loss ratio metrics
-
-4. Premium & Revenue Insights
-
-Total premium collected
-
-Revenue trends over time
-
-Top contributing segments
-
-🔧 Tools & Technologies Used
+🛠️ Tools & Technologies
 
 Power BI Desktop
 
-Power Query
-
-DAX (Data Analysis Expressions)
-
 Power BI Service
 
-Excel / CSV Data Sources
+Power Query
 
-RLS (Row Level Security)
+DAX
 
-🛠️ Data Cleaning & Transformation
+Excel / CSV
 
-Performed using Power Query:
+Row Level Security (RLS)
 
-Removed duplicates and null values
+Scheduled Refresh
+
+🔧 Data Preparation & Modeling
+Data Cleaning (Power Query)
+
+Removed duplicate & null values
 
 Standardized column names
 
+Applied correct data types
+
+Merged and appended tables
+
 Created calculated columns
 
-Merged & appended tables
+Data Modeling
 
-Applied data types
+Designed a star schema model
 
-Built star schema model
+Created relationships between fact & dimension tables
 
-📐 Data Modeling
+Defined hierarchies (Region → State → City)
 
-Designed a star schema with fact & dimension tables
-
-Defined relationships (one-to-many, many-to-one)
-
-Created DAX measures for KPIs:
+Built DAX measures:
 
 Total Premium
 
 Total Claims
 
-Claim Amount
+Claim Count
 
 Loss Ratio
 
 Active Policies
 
-Implemented hierarchies (Region → State → City)
+📈 Dashboard Features
 
-🔐 Row Level Security (RLS)
+Slicers for region, policy type, age group, and gender
 
-Created RLS roles for region-wise access
+KPI cards showing total premium, claims, active policies
 
-Assigned filters using DAX
+Region-wise policy and claim map visualizations
 
-Tested and validated RLS in Power BI Desktop
+Trend charts for premium growth and claim patterns
 
-Published to Power BI Service and assigned users to roles
+Customer segmentation visuals
 
-☁️ Power BI Service Setup
+Policy performance distribution charts
 
-Published the PBIX report to Power BI Service
+⚡ Power BI Service Deployment
+✔ Published the Report
 
-Configured Scheduled Refresh (Daily/Hourly)
+Uploaded the .pbix file to a Power BI workspace.
 
-Connected to OneDrive/SharePoint for auto-updates
+Validated visuals, measures, and data connections in the cloud.
 
-Built a workspace for sharing & collaboration
+✔ Scheduled Refresh
 
-Provided access to managers and specific roles
+Configured Scheduled Refresh to automatically update data.
 
-📈 Final Output
+Connected to OneDrive/SharePoint source for seamless refresh.
 
-The final dashboard provides:
+Set daily refresh frequency based on business needs.
 
-Clear visibility into customer, policy, and claim performance
+✔ Managed Roles
 
-Data-driven recommendations for minimizing risk
+Used Manage Roles in Power BI Desktop to define user-level filters.
 
-Insights for improving policy renewals and customer retention
+Verified filtering using View As → Roles.
 
-Operational reporting for management teams
+✔ Row Level Security (RLS)
+
+Applied Row Level Security to restrict data by region/department.
+
+Assigned RLS roles to users in Power BI Service.
+
+Ensured every user sees only their authorized data.
+
+📁 Project Files
+
+insurance-data-analysis.pbix
+
+InsuranceData.csv
+
+🚀 How to Use This Project
+
+Download the .pbix file
+
+Open in Power BI Desktop
+
+Load the dataset (CSV)
+
+Refresh the model
+
+Publish to Power BI Service (optional)
